@@ -9,6 +9,7 @@ public class Main {
         String usuario = "RIBERA";
         String contraseña = "ribera";
 
+
         try (Connection conn = DriverManager.getConnection(url,usuario,contraseña);
              Statement statement = conn.createStatement()){
             String sql="CREATE TABLE empleado2 ("+
